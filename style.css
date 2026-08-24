@@ -1,0 +1,47 @@
+:root {
+  --bg: #ffffff; --fg: #16161c; --muted: #5a5a66; --rule: #e6e6ec;
+  --accent: #2b5fd9; --panel: #f6f6f9; --code: #ececf2;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0b0f; --fg: #f2f2f5; --muted: #9a9aa6; --rule: #26262e;
+    --accent: #7aa2ff; --panel: #14141a; --code: #1e1e26;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 40px 20px 96px; background: var(--bg); color: var(--fg);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+main { max-width: 700px; margin: 0 auto; }
+h1 { font-size: 28px; line-height: 1.25; margin: 0 0 4px; letter-spacing: -0.02em; }
+h2 { font-size: 19px; margin: 40px 0 10px; letter-spacing: -0.01em; }
+h3 { font-size: 16px; margin: 24px 0 6px; color: var(--fg); }
+.updated { color: var(--muted); font-size: 14px; margin: 0 0 28px; }
+.callout {
+  background: var(--panel); border-radius: 12px; padding: 4px 18px;
+  margin: 0 0 8px; border: 1px solid var(--rule);
+}
+ul { padding-left: 22px; }
+li { margin: 6px 0; }
+a { color: var(--accent); }
+code {
+  background: var(--code); padding: 1px 5px; border-radius: 4px;
+  font: 13px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace;
+  word-break: break-all;
+}
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--rule); }
+th { color: var(--muted); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; }
+td:first-child { width: 42%; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 44px 0 20px; }
+footer { color: var(--muted); font-size: 14px; }
+strong { font-weight: 650; }
+.apps { list-style: none; padding: 0; }
+.apps li { margin: 0; border-bottom: 1px solid var(--rule); }
+.apps a { display: block; padding: 16px 2px; text-decoration: none; font-weight: 600; }
+.apps span { display: block; color: var(--muted); font-weight: 400; font-size: 14px; }
+.apps .alt { display: block; padding: 0 2px 16px; font-size: 14px; }
+.apps .alt a { display: inline; padding: 0; font-weight: 400; }

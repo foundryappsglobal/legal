@@ -3,7 +3,7 @@
 # https://mozilla.org/MPL/2.0/.
 #
 # Palavras de 3 a 7 letras do VERO (Verificador Ortográfico Livre, pt_BR), usadas como lista de
-# palavras válidas em Mente Viva: Word Connect. Derivado de pt_BR.dic + pt_BR.aff do repositório
+# palavras válidas em Mente Viva: Jogo de Palavras. Derivado de pt_BR.dic + pt_BR.aff do repositório
 # LibreOffice/dictionaries (commit 1e848fb, pasta pt_BR): afixos expandidos, só as formas em
 # minúsculas, sem as palavras marcadas como proibidas, escritas sem acentos (como no tabuleiro).
 # O VERO é distribuído sob a LGPLv3 e a Mozilla Public License; esta lista usa a MPL 2.0.
